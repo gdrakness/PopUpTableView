@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" red="0.99845539204063005" green="1" blue="0.23422641786186005" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Click Here Test Button"/>
                                 <connections>
-                                    <action selector="fuckyou:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nyJ-mw-amX"/>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O18-OB-wCG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKx-lI-eoG">

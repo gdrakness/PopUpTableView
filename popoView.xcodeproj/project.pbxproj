@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D70CC8F81CC1631D002C3D0C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70CC8F71CC1631D002C3D0C /* QuartzCore.framework */; };
-		D70CC9041CC1760B002C3D0C /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = D70CC9031CC1760B002C3D0C /* NSObject+Log.m */; };
 		D70CC90A1CC1798D002C3D0C /* JWBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = D70CC9071CC1798D002C3D0C /* JWBlurView.m */; };
 		D70CC90B1CC1798D002C3D0C /* UIViewController+ENPopUp.m in Sources */ = {isa = PBXBuildFile; fileRef = D70CC9091CC1798D002C3D0C /* UIViewController+ENPopUp.m */; };
+		D70CC9211CC21ADB002C3D0C /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D70CC9181CC21ADB002C3D0C /* Contents.json */; };
+		D70CC9221CC21ADB002C3D0C /* illness_rb_img_nor.png.png in Resources */ = {isa = PBXBuildFile; fileRef = D70CC9191CC21ADB002C3D0C /* illness_rb_img_nor.png.png */; };
+		D70CC9231CC21ADB002C3D0C /* illness_rb_img_nor.png@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70CC91A1CC21ADB002C3D0C /* illness_rb_img_nor.png@2x.png */; };
+		D70CC9241CC21ADB002C3D0C /* illness_rb_img_nor.png@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70CC91B1CC21ADB002C3D0C /* illness_rb_img_nor.png@3x.png */; };
+		D70CC9251CC21ADB002C3D0C /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D70CC91D1CC21ADB002C3D0C /* Contents.json */; };
+		D70CC9261CC21ADB002C3D0C /* illness_rb_img_sel.png.png in Resources */ = {isa = PBXBuildFile; fileRef = D70CC91E1CC21ADB002C3D0C /* illness_rb_img_sel.png.png */; };
+		D70CC9271CC21ADB002C3D0C /* illness_rb_img_sel.png@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70CC91F1CC21ADB002C3D0C /* illness_rb_img_sel.png@2x.png */; };
+		D70CC9281CC21ADB002C3D0C /* illness_rb_img_sel.png@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D70CC9201CC21ADB002C3D0C /* illness_rb_img_sel.png@3x.png */; };
 		D71721B61CC0FC6F0016D138 /* KLProvincePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71721B51CC0FC6F0016D138 /* KLProvincePicker.storyboard */; };
 		D71721B91CC0FD630016D138 /* CityDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D71721B81CC0FD630016D138 /* CityDataModel.m */; };
 		D71721BB1CC0FD770016D138 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = D71721BA1CC0FD770016D138 /* cities.plist */; };
@@ -44,12 +50,18 @@
 
 /* Begin PBXFileReference section */
 		D70CC8F71CC1631D002C3D0C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D70CC9021CC1760B002C3D0C /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Log.h"; path = "../../Test/Test/NSObject+Log.h"; sourceTree = "<group>"; };
-		D70CC9031CC1760B002C3D0C /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Log.m"; path = "../../Test/Test/NSObject+Log.m"; sourceTree = "<group>"; };
 		D70CC9061CC1798D002C3D0C /* JWBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWBlurView.h; sourceTree = "<group>"; };
 		D70CC9071CC1798D002C3D0C /* JWBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWBlurView.m; sourceTree = "<group>"; };
 		D70CC9081CC1798D002C3D0C /* UIViewController+ENPopUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ENPopUp.h"; sourceTree = "<group>"; };
 		D70CC9091CC1798D002C3D0C /* UIViewController+ENPopUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ENPopUp.m"; sourceTree = "<group>"; };
+		D70CC9181CC21ADB002C3D0C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		D70CC9191CC21ADB002C3D0C /* illness_rb_img_nor.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = illness_rb_img_nor.png.png; sourceTree = "<group>"; };
+		D70CC91A1CC21ADB002C3D0C /* illness_rb_img_nor.png@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "illness_rb_img_nor.png@2x.png"; sourceTree = "<group>"; };
+		D70CC91B1CC21ADB002C3D0C /* illness_rb_img_nor.png@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "illness_rb_img_nor.png@3x.png"; sourceTree = "<group>"; };
+		D70CC91D1CC21ADB002C3D0C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		D70CC91E1CC21ADB002C3D0C /* illness_rb_img_sel.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = illness_rb_img_sel.png.png; sourceTree = "<group>"; };
+		D70CC91F1CC21ADB002C3D0C /* illness_rb_img_sel.png@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "illness_rb_img_sel.png@2x.png"; sourceTree = "<group>"; };
+		D70CC9201CC21ADB002C3D0C /* illness_rb_img_sel.png@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "illness_rb_img_sel.png@3x.png"; sourceTree = "<group>"; };
 		D71721B51CC0FC6F0016D138 /* KLProvincePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KLProvincePicker.storyboard; sourceTree = "<group>"; };
 		D71721B71CC0FD630016D138 /* CityDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDataModel.h; sourceTree = "<group>"; };
 		D71721B81CC0FD630016D138 /* CityDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDataModel.m; sourceTree = "<group>"; };
@@ -79,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D70CC8F81CC1631D002C3D0C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +122,28 @@
 			path = ENPopUpViewController;
 			sourceTree = "<group>";
 		};
+		D70CC9171CC21ADB002C3D0C /* illness_rb_img_nor.png.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				D70CC9181CC21ADB002C3D0C /* Contents.json */,
+				D70CC9191CC21ADB002C3D0C /* illness_rb_img_nor.png.png */,
+				D70CC91A1CC21ADB002C3D0C /* illness_rb_img_nor.png@2x.png */,
+				D70CC91B1CC21ADB002C3D0C /* illness_rb_img_nor.png@3x.png */,
+			);
+			path = illness_rb_img_nor.png.imageset;
+			sourceTree = "<group>";
+		};
+		D70CC91C1CC21ADB002C3D0C /* illness_rb_img_sel.png.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				D70CC91D1CC21ADB002C3D0C /* Contents.json */,
+				D70CC91E1CC21ADB002C3D0C /* illness_rb_img_sel.png.png */,
+				D70CC91F1CC21ADB002C3D0C /* illness_rb_img_sel.png@2x.png */,
+				D70CC9201CC21ADB002C3D0C /* illness_rb_img_sel.png@3x.png */,
+			);
+			path = illness_rb_img_sel.png.imageset;
+			sourceTree = "<group>";
+		};
 		D7280BCC1CC0E8C500035670 = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +170,6 @@
 			children = (
 				D7280BDB1CC0E8C600035670 /* AppDelegate.h */,
 				D7280BDC1CC0E8C600035670 /* AppDelegate.m */,
-				D70CC9021CC1760B002C3D0C /* NSObject+Log.h */,
-				D70CC9031CC1760B002C3D0C /* NSObject+Log.m */,
 				D7280BDE1CC0E8C600035670 /* ViewController.h */,
 				D7280BDF1CC0E8C600035670 /* ViewController.m */,
 				D71721BC1CC0FDD20016D138 /* KLProvincePickerController.h */,
@@ -149,6 +180,8 @@
 				D71721B81CC0FD630016D138 /* CityDataModel.m */,
 				D70CC9051CC1798D002C3D0C /* ENPopUpViewController */,
 				D7280BE41CC0E8C600035670 /* Assets.xcassets */,
+				D70CC9171CC21ADB002C3D0C /* illness_rb_img_nor.png.imageset */,
+				D70CC91C1CC21ADB002C3D0C /* illness_rb_img_sel.png.imageset */,
 				D7280BE61CC0E8C600035670 /* LaunchScreen.storyboard */,
 				D7280BE91CC0E8C600035670 /* Info.plist */,
 				D71721BA1CC0FD770016D138 /* cities.plist */,
@@ -290,10 +323,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7280BE81CC0E8C600035670 /* LaunchScreen.storyboard in Resources */,
+				D70CC9261CC21ADB002C3D0C /* illness_rb_img_sel.png.png in Resources */,
 				D71721B61CC0FC6F0016D138 /* KLProvincePicker.storyboard in Resources */,
 				D7280BE51CC0E8C600035670 /* Assets.xcassets in Resources */,
+				D70CC9221CC21ADB002C3D0C /* illness_rb_img_nor.png.png in Resources */,
+				D70CC9231CC21ADB002C3D0C /* illness_rb_img_nor.png@2x.png in Resources */,
+				D70CC9251CC21ADB002C3D0C /* Contents.json in Resources */,
+				D70CC9241CC21ADB002C3D0C /* illness_rb_img_nor.png@3x.png in Resources */,
 				D71721BB1CC0FD770016D138 /* cities.plist in Resources */,
+				D70CC9271CC21ADB002C3D0C /* illness_rb_img_sel.png@2x.png in Resources */,
 				D7280BE31CC0E8C600035670 /* Main.storyboard in Resources */,
+				D70CC9211CC21ADB002C3D0C /* Contents.json in Resources */,
+				D70CC9281CC21ADB002C3D0C /* illness_rb_img_sel.png@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +363,6 @@
 				D70CC90A1CC1798D002C3D0C /* JWBlurView.m in Sources */,
 				D71721BE1CC0FDD20016D138 /* KLProvincePickerController.m in Sources */,
 				D70CC90B1CC1798D002C3D0C /* UIViewController+ENPopUp.m in Sources */,
-				D70CC9041CC1760B002C3D0C /* NSObject+Log.m in Sources */,
 				D7280BE01CC0E8C600035670 /* ViewController.m in Sources */,
 				D7280BDD1CC0E8C600035670 /* AppDelegate.m in Sources */,
 				D7280BDA1CC0E8C500035670 /* main.m in Sources */,

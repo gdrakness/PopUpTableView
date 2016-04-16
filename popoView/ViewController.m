@@ -21,11 +21,12 @@ static NSString *ID = @"cell";
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)fuckyou:(id)sender {
+- (IBAction)clickButton:(id)sender {
 
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"KLProvincePicker" bundle:nil];
     KLProvincePickerController *province = [sb instantiateInitialViewController];
@@ -34,16 +35,12 @@ static NSString *ID = @"cell";
     
     CGFloat pickeX = self.view.center.x - province.view.frame.size.width*0.5;
     province.view.frame = CGRectMake(pickeX,500, 300, 350);
-    //设置圆角边框
-    province.view.layer.cornerRadius = 8;
-    province.view.layer.masksToBounds = YES;
     
     province.provinceLabel = ^(NSString * string){
         NSLog(@"%@",string);
     };
     
     [self presentPopUpViewController:province];
-    
 
 }
 //确认事件

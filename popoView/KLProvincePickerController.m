@@ -8,7 +8,6 @@
 
 #import "KLProvincePickerController.h"
 #import "CityDataModel.h"
-
 //#import "Masonry.h"
 
 static NSString *ID = @"cell";
@@ -17,6 +16,10 @@ static NSString *ID = @"cell";
 @property (nonatomic, strong) NSArray *cityArr;
 //城市名字
 @property (nonatomic, strong) CityDataModel *cityData;
+//图片名称
+@property (nonatomic, strong) UIImage *image;
+//indexPath
+@property (nonatomic, assign) NSInteger num;
 @end
 
 @implementation KLProvincePickerController
@@ -51,24 +54,29 @@ static NSString *ID = @"cell";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                         reuseIdentifier:ID];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                        reuseIdentifier:ID];
     }
-    //[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     self.cityData = self.cityArr[indexPath.row];
     cell.textLabel.text =  self.cityData.name;
     cell.textLabel.textColor = [UIColor blackColor];
     cell.textLabel.font = [UIFont systemFontOfSize:15];
-    cell.backgroundColor = [UIColor colorWithRed:
-                            ((float)arc4random_uniform(256) / 255.0)
-                                    green:((float)arc4random_uniform(256) / 255.0)
-                                    blue:((float)arc4random_uniform(256) / 255.0)
-                                    alpha:1.0];
+    cell.backgroundColor = [UIColor whiteColor];
+    cell.imageView.image = self.image;
+ 
+    if (indexPath.row == self.num) {
+        cell.imageView.image = [UIImage imageNamed:@"illness_rb_img_sel.png@3x"];
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.cityData = self.cityArr[indexPath.row];
+    self.num = indexPath.row;
+    [tableView reloadData];
+   
 }
 
 //确认按钮
@@ -98,6 +106,11 @@ static NSString *ID = @"cell";
         _cityArr = [CityDataModel CityData];
     }
     return _cityArr;
+}
+-(UIImage *)image{
+    if (_image == nil) {
+        _image = [UIImage imageNamed:@"illness_rb_img_nor.png@3x"];
+    }return _image;
 }
 
 
