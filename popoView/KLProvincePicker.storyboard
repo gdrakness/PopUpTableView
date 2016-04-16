@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o16-gb-J6i">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Province Picker Controller-->
+        <scene sceneID="Qbz-oI-2FW">
+            <objects>
+                <viewController id="o16-gb-J6i" customClass="KLProvincePickerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GQe-JV-cjT"/>
+                        <viewControllerLayoutGuide type="bottom" id="4mv-QE-1pg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z8D-te-0Gj">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置省份" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWp-Fh-duy">
+                                <rect key="frame" x="116" y="15" width="68" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.12549019610000001" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fengexian" translatesAutoresizingMaskIntoConstraints="NO" id="Viz-Ld-T7G">
+                                <rect key="frame" x="0.0" y="303" width="300" height="1"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GtH-eG-JCe"/>
+                                    <constraint firstAttribute="height" constant="1" id="Rzc-g9-xdj"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Rzc-g9-xdj"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-pa-0Gm">
+                                <rect key="frame" x="150" y="316" width="150" height="34"/>
+                                <animations/>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" red="0.12549019610000001" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirBtn:" destination="o16-gb-J6i" eventType="touchUpInside" id="U07-rb-gJw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeG-9r-THg">
+                                <rect key="frame" x="0.0" y="316" width="150" height="34"/>
+                                <animations/>
+                                <state key="normal" title="取消">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="o16-gb-J6i" eventType="touchUpInside" id="8fk-yu-hea"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Viz-Ld-T7G" firstAttribute="leading" secondItem="Z8D-te-0Gj" secondAttribute="leading" id="0wK-IC-jVi"/>
+                            <constraint firstItem="fIT-pa-0Gm" firstAttribute="leading" secondItem="JeG-9r-THg" secondAttribute="trailing" id="3MB-DE-3hY"/>
+                            <constraint firstItem="JeG-9r-THg" firstAttribute="leading" secondItem="Z8D-te-0Gj" secondAttribute="leading" id="9fG-tJ-qQG"/>
+                            <constraint firstItem="fIT-pa-0Gm" firstAttribute="height" secondItem="JeG-9r-THg" secondAttribute="height" id="Ek9-lX-jv3"/>
+                            <constraint firstItem="fIT-pa-0Gm" firstAttribute="leading" secondItem="JeG-9r-THg" secondAttribute="trailing" id="Faq-hw-Irg"/>
+                            <constraint firstItem="fIT-pa-0Gm" firstAttribute="width" secondItem="JeG-9r-THg" secondAttribute="width" id="Gbp-jq-6TF"/>
+                            <constraint firstItem="4mv-QE-1pg" firstAttribute="top" secondItem="fIT-pa-0Gm" secondAttribute="bottom" id="LU1-EZ-N4d"/>
+                            <constraint firstItem="JeG-9r-THg" firstAttribute="top" secondItem="Viz-Ld-T7G" secondAttribute="bottom" constant="12" id="LXs-d8-htj"/>
+                            <constraint firstAttribute="bottom" secondItem="JeG-9r-THg" secondAttribute="bottom" id="Voy-Ne-Rtn"/>
+                            <constraint firstAttribute="trailing" secondItem="fIT-pa-0Gm" secondAttribute="trailing" id="aCH-pw-hnA"/>
+                            <constraint firstItem="eWp-Fh-duy" firstAttribute="top" secondItem="GQe-JV-cjT" secondAttribute="bottom" constant="15" id="ciG-gp-Ypk"/>
+                            <constraint firstItem="eWp-Fh-duy" firstAttribute="centerX" secondItem="Z8D-te-0Gj" secondAttribute="centerX" id="eVw-a5-lvm"/>
+                            <constraint firstAttribute="bottom" secondItem="fIT-pa-0Gm" secondAttribute="bottom" id="h9W-0d-HwY"/>
+                            <constraint firstAttribute="trailing" secondItem="fIT-pa-0Gm" secondAttribute="trailing" id="iho-g7-EoP"/>
+                            <constraint firstAttribute="trailing" secondItem="Viz-Ld-T7G" secondAttribute="trailing" id="ztC-yi-fBY"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="350"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TID-Tt-2Tm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fengexian" width="1" height="3"/>
+    </resources>
+</document>
