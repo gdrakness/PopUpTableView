@@ -19,7 +19,7 @@ static NSString *ID = @"cell";
 //图片名称
 @property (nonatomic, strong) UIImage *image;
 
-@property (nonatomic, strong) NSString *data;
+@property (nonatomic, strong) NSString *cityName;
 //indexPath
 @property (nonatomic, assign) NSInteger num;
 @end
@@ -78,8 +78,7 @@ static NSString *ID = @"cell";
     self.num = indexPath.row;
     [tableView reloadData];
     self.cityData = self.cityArr[indexPath.row];
-    self.data = self.cityData.name;
-//    [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath,nil] withRowAnimation:UITableViewRowAnimationNone];
+    self.cityName = self.cityData.name;
    
 }
 
@@ -87,7 +86,7 @@ static NSString *ID = @"cell";
 - (IBAction)confirBtn:(id)sender {
     //block回调选择当前的城市
     if (self.provinceLabel) {
-        self.provinceLabel(self.data);
+        self.provinceLabel(self.cityName);
     }
     //回调dismiss当前PopUpView
     if ([self.delegate respondsToSelector:@selector(cancelBtnClick)]) {

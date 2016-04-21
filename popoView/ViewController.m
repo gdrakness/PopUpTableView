@@ -37,6 +37,7 @@ static NSString *ID = @"cell";
     province.view.frame = CGRectMake(pickeX,500, 300, 350);
     
     province.provinceLabel = ^(NSString * string){
+        //回调回来的参数string
         NSLog(@"%@",string);
     };
     
